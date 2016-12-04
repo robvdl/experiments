@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id="app" v-cloak>
+    <!-- these properties and methods are on the application model -->
+    <div>integer: {{ integer }}
+      <input v-model="integer"></input>
+    </div>
+    <div>str: {{ str }}</div>
+    <button v-on:click="Inc">Increase</button>
+    <button v-on:click="Repeat">Repeat</button>
+    <button v-on:click="Reset">Reset</button>
+
+    <!-- insert our custom component -->
+    <login-form></login-form>
+  </div>
+  <script type="text/javascript" src="ex1.js"></script>
+</body>
+
+</html>
